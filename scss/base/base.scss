@@ -1,0 +1,51 @@
+@import "../abstract/mixins.scss";
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+
+
+}
+html{
+    font-size: 100%;//62.5
+   
+   
+  
+    @include respond (phone){
+        font-size: 10%;
+    }
+
+    @include respond(tablet-land) {
+        font-size: 100%;//56.25%
+    }
+
+    
+
+    @include respond(tablet-port) {
+        font-size: 66%;
+    }
+   
+    @include respond(big-desktop) {
+        font-size: 150%;
+    }
+}
+
+body{
+    box-sizing: border-box;
+    @include respond(phone) {
+        font-size: 56.25%;
+        //background-color: orangered;
+        width: 100%;
+    }
+
+}
+
+/*@media (max-width: 600px){
+
+}
+@include respond(phone){
+    font-size: 50%;
+}*/

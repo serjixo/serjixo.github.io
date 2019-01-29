@@ -1,0 +1,153 @@
+@import "../abstract/mixins.scss";
+
+body { 
+  margin: 0;
+  background-color:black;
+  font-size: 1rem;
+  
+  height: 100%;
+  width: 100%;
+
+  box-sizing: border-box;
+  ::selection{
+    background-color: $pinky;
+    color: $azulito_normal;
+  }
+  
+
+  .div{
+    height: 100%;
+    width: 100%;
+  }
+
+  .background{
+    position: relative;
+    //width: 100vw;
+    //height: 100vh;
+
+    .img__container{
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+
+      .__img{
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0px;
+        object-fit: cover;
+        z-index: -1;
+  
+        
+      }
+
+    }
+    
+    .cover__container{
+      position: absolute;
+      height: 100vh;
+      width: 100vw;
+
+
+      .cover{
+        height: 100%; // 100vh;
+        width: 100%; //100vw;
+        /*width: inherit;
+        height: inherit;*/
+        position: absolute;
+        top:0px;
+        object-fit: cover;
+        z-index: 4;
+        
+  
+      }
+
+    }
+    
+    .translucid__container{
+      position: absolute;
+
+      height: 100vh;
+      width: 100vw;
+
+      .translucid{
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top:0px;
+        object-fit: cover;
+        //background-image: linear-gradient(45deg , $badass-light, $badass-dark 50%, transparent 50%);
+        //background-image: linear-gradient(45deg , $black-back, $black-transparent 50%, transparent 50%);
+        background-image: linear-gradient(45deg , $pinky,  $azulito 50%, transparent 50%);
+        z-index: 2;
+
+        }
+
+    }
+
+    .scene__container{
+      position: absolute;
+      height: 10%; // 100vh;
+      width: 10%; //100vw;
+    }
+    .scene{
+      height: 100%; // 100vh;
+      width: 100%; //100vw;
+      //width: inherit;
+      //height: inherit;
+      position: absolute;
+      top:0px;
+      z-index: 3;
+      
+    }
+
+    .logo__container{
+      position: absolute;
+      height: 60vh;
+      width: 60vw;
+
+   .logo{
+     //background-color: yellowgreen;
+      width: inherit;
+      //height: inherit;  with small screen gets to compressed MUST check
+      position: absolute;
+      top:42vh;
+      z-index: 4;
+
+      @include respond(tablet-land){
+        top:50vh;
+        width: 60vw;
+      }
+      @include respond (big-desktop){
+        top:35vh;
+        left:-2.3vh;
+      }
+      @include respond (tablet-port){
+        top:55vh;
+        width: 75vw;
+
+      }
+      @include respond (phone){
+        top:55vh;
+        width: 75vw;
+      }
+
+      }
+    }
+    element.style{
+      width:100vw;
+      height:100vh;
+    }
+
+
+
+  }
+
+
+
+
+
+  
+
+}
+

@@ -1,0 +1,75 @@
+.button{
+                            
+    position: relative;
+    top: 15rem;
+    left:2rem;
+
+    display: inline-block;
+    font-family: "oswald", "sans-serif";
+    font-weight: 400!important;
+    text-align: center!important;
+  
+   
+    cursor: pointer;
+    color: #fff;
+    height: 50px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 17px 36px 18px;
+    background-image: linear-gradient(270deg, $azulito_normal,$pinky_normal);//#810505,#eb1668
+
+
+}
+.button, .button:before {
+border-radius: 25px;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+}
+
+.button {
+display: block;
+width: 80%;
+padding: 17px 10px 18px;
+}
+.button:before {
+padding: 15px 8px 16px;
+background-color: #0c0c0c;
+}
+
+
+.button.button-outline:before {
+opacity: 1;
+}
+
+
+.button:before {
+position: absolute;
+top: 2px;
+left: 2px;
+right: 2px;
+bottom: 2px;
+//background-color: hsla(0,0%,7%,.98);
+padding: 15px 34px 16px;
+content: attr(button-text);
+opacity: 0;
+transition: opacity .2s ease-in-out;
+}
+
+.button, .button:before {
+border-radius: 25px;
+-webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+}
+
+.button.button-outline:hover:before {
+opacity: 0;
+}
+.button:hover:before {
+opacity: 1;
+}
+
+
+
+
+
+

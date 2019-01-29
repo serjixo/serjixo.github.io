@@ -1,0 +1,24 @@
+{
+  "name": "serzweb",
+  "version": "1.0.0",
+  "description": "serz web electronic music dj edm bigroom sets mashups bootlegs pack",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss  css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "devserver": "live-server"
+  },
+  "author": "Sergio Jimenez",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.10.0",
+    "nodemon": "^1.17.3"
+  },
+  "dependencies": {
+    "aos": "^2.3.0",
+    "live-server": "^1.2.0",
+    "nodesass": "0.0.2-security",
+    "npm": "^6.4.1",
+    "rellax": "^1.6.2"
+  }
+}

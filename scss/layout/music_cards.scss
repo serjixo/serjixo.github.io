@@ -1,0 +1,264 @@
+@import "./../abstract/variables.scss";
+@import "./button.scss";
+
+
+
+    .cards__container{
+        position: relative;
+        top: -25rem;
+        width: 100vw;
+        height: 100vh;
+        //background-color: $badass-light;
+       
+        
+            .card1{
+                margin:0;
+                position: relative;
+                top: 15rem;
+                left: 5rem;
+                
+            
+                z-index: 11;
+
+                
+                width: 20rem;
+                height: 25rem;
+                background-image: linear-gradient(45deg, $pinky_normal 30%, $azulito_normal 100%);//#810505,#eb1668;
+                border-radius: 2%;
+                box-shadow: 2px 3px 8px black;
+                transition: all .8s;
+                
+                &:hover{ 
+                 
+                    transform: translateX(10rem);
+                    
+                }
+               
+                
+
+
+                .artwork__container{
+                    position: relative;
+
+                    //background-color: $badass-light;
+                    width:10rem;
+                    height: 10rem;
+                    
+        
+
+                    
+                    .artwork1{
+                
+                        width: 17rem;
+                        height: 17rem;
+                        position: relative;
+                        top: -3rem;
+                        left: 1.5rem;
+                        border-style: solid;
+                        border-image: linear-gradient( $pinky_normal, $azulito_normal)10;//#810505,#eb1668;
+                        border-radius: 2%;
+
+                        z-index: 10;
+                    
+
+
+                    }
+                }
+
+                    .info__container{
+                        position: absolute;
+                        left:1%;
+                        top:1%;
+                        bottom: 1%;
+                        right: 1%;
+                        margin: auto;
+                        width: 97%;
+                        height: 97%;
+                        border-radius: 2%;
+                        background-image: linear-gradient(321deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 34%, rgba(94,93,93,1) 100%);
+                        
+ //--------------button----------------------->>>AA   
+                       
+                     
+
+
+                    }
+
+            
+
+    }
+
+
+//--------card 2----------------------
+
+
+
+        
+.card2{
+    margin:0;
+    position: relative;
+    top: -10rem;
+    left: 27.8rem;
+    display: inline-block;
+
+    z-index: 11;
+
+    
+    width: 20rem;
+    height: 25rem;
+    background-image: linear-gradient(45deg, $pinky_normal 30%, $azulito_normal 100%);//#810505,#eb1668;
+    border-radius: 2%;
+    box-shadow: 2px 3px 8px black;
+    transition: all .8s;
+    
+    &:hover{ 
+     
+        transform: translateX(10rem);
+        
+    }
+
+
+    .artwork__container2{
+        position: relative;
+        
+
+        //background-color: $badass-light;
+        width:10rem;
+        height: 10rem;
+
+    
+
+
+        
+        .artwork2{
+    
+            width: 17rem;
+            height: 17rem;
+            position: relative;
+            top: -3rem;
+            left: 1.5rem;
+            border-style: solid;
+            border-image: linear-gradient( $pinky_normal, $azulito_normal)10;//#810505,#eb1668;
+            border-radius: 2%;
+            
+
+            
+
+            z-index: 10;
+        
+
+
+        }
+    }
+
+        .info__container2{
+            position: absolute;
+            left:1%;
+            top:1%;
+            bottom: 1%;
+            right: 1%;
+            margin: auto;
+            width: 97%;
+            height: 97%;
+            border-radius: 2%;
+            background-image: linear-gradient(321deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 34%, rgba(94,93,93,1) 100%);
+            
+//--------------button----------------------->>>AA                       
+
+
+        }
+
+
+
+}
+
+
+
+
+
+
+.card3{
+    margin:0;
+    position: relative;
+    top: -10rem;
+    left: 30rem;
+    display: inline-block;
+
+    z-index: 11;
+
+    
+    width: 20rem;
+    height: 25rem;
+    background-image: linear-gradient(45deg, $pinky_normal 30%, $azulito_normal 100%);//#810505,#eb1668;
+    border-radius: 2%;
+    box-shadow: 2px 3px 8px black;
+    transition: all .8s;
+    
+    &:hover{ 
+     
+        transform: translateX(10rem);
+        
+    }
+
+
+    .artwork__container3{
+        position: relative;
+
+        //background-color: $badass-light;
+        width:10rem;
+        height: 10rem;
+    
+
+
+        
+        .artwork3{
+    
+            width: 17rem;
+            height: 17rem;
+            position: relative;
+            top: -3rem;
+            left: 1.5rem;
+            border-style: solid;
+            border-image: linear-gradient( $pinky_normal, $azulito_normal)10;//#810505,#eb1668;
+            border-radius: 2%;
+
+            z-index: 10;
+        
+
+
+        }
+    }
+
+        .info__container3{
+            position: absolute;
+            left:1%;
+            top:1%;
+            bottom: 1%;
+            right: 1%;
+            margin: auto;
+            width: 97%;
+            height: 97%;
+            border-radius: 2%;
+            background-image: linear-gradient(321deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 34%, rgba(94,93,93,1) 100%);
+            
+//--------------button----------------------->>>AA                       
+
+
+        }
+
+
+
+
+}
+
+
+
+
+
+    }
+
+
+
+
+
+

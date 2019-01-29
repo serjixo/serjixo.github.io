@@ -1,0 +1,230 @@
+.navigation{
+    //position: relative;
+    
+
+    &__checkbox{
+        display: none; 
+        z-index: 100000;
+
+
+    }
+
+
+    &__button{
+        background-color: transparent;//transparent
+        height: 5rem;//5rem
+        width: 5rem; //5rem
+        position: fixed;
+        border-radius: 52%;
+        top: 42%; //18rem
+        right: 1.8%; //1rem
+        z-index: 12;
+        //box-shadow: 2px 3px 8px black;
+        cursor: pointer;
+        
+
+
+    }
+
+    &__background{
+        //background-color: yellowgreen;
+
+        //width: 6rem;
+        //height: 6rem;
+        height: 100%;
+        width: 100%;
+        //border-radius: 50%;
+        background-image: linear-gradient(225deg ,  $pinky, $azulito 50%, transparent 50%); 
+        position: fixed;
+        //top:10rem;
+        //right: 6.5rem;
+       //background-image: radial-gradient($badass-dark, $badass-light);
+        z-index: 10;
+        transform: translateX(100%);
+        transition: transform 1s;
+
+
+        } 
+
+    &__nav__container{
+        
+        height: 100%; // 100vh;
+        width: 100%; //100vw;
+        //height: 100vh;
+        //width: 100vw;
+        position:fixed;
+        top: 0;
+        right: 0;
+        z-index: 11;
+
+
+        width: 0vw;
+        opacity: 0;
+
+        transform: translateX(100%);
+        transition: transform 1s;
+        transition: opacity 1;
+
+
+
+
+    }
+
+    &__list{
+        position: absolute;
+        top:30%;
+        left: 70%;
+        transform: translate(-50%,-50%);
+        list-style: none;
+        text-align: center;
+        text-transform: uppercase;
+
+
+
+    }
+
+    &__item{
+
+
+    }
+
+    &__link{
+        &:link, 
+        &:visited {
+
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 300;
+        color:white;
+        //padding: .8rem;
+        text-decoration: none;
+        font-family: "oswald", sans-serif;
+        background-image: linear-gradient(225deg , $pinky,  $azulito 50%, transparent 50%);
+        background-size: 400%;
+        transition: all .8s;
+        text-shadow: 2px 2px 8px black;
+
+        @include respond (phone){
+            font-size: 450%;
+        }
+
+        }
+
+        &:hover, 
+        &:active{ 
+            background-position: 100%; 
+            transform: translateX(1rem);
+            
+        }
+
+
+    }
+
+
+    &__checkbox:checked ~ &__background {
+        transform: translateX(0vw);
+
+
+    }
+
+    &__checkbox:checked ~ &__nav__container {
+
+        transform: translateX(0vw);
+
+        width: 100%;
+        opacity: 1;
+        
+
+    }
+
+
+    //       ICON       //
+
+    &__icon{
+        margin-top: 2.4rem;// 2.4rem
+        margin-left: 1rem;
+        position: relative;
+         
+        &,
+        &::before,
+        &::after {
+            width: 3rem; //3 rem
+            height: 2px; //
+            background-color: white ;
+            display: inline-block; 
+            box-shadow: 2px 2px 8px black; 
+
+        }
+
+ 
+        &::before,
+        &::after{
+            position: absolute;
+            content: "";
+            left: 0; 
+            transition: all .2s;
+
+        }
+
+        &::before{
+            top: -.8rem;
+        }
+
+        &::after{
+            top:.8rem;
+        }
+    } 
+   
+    &__button:hover &__icon::before{
+        top: -.9rem;
+
+    }
+    &__button:hover &__icon::after{
+        top: .9rem;
+
+    }
+
+    &__checkbox:checked ~ &__button &__icon{
+        background-color: transparent;
+        box-shadow: 0 0 0 transparent;
+    }
+
+    &__checkbox:checked ~ &__button &__icon::before{
+
+
+
+        top: 0;
+        transform: rotate(135deg);
+        //margin-top: .9rem;
+
+        
+    }
+
+    &__checkbox:checked ~ &__button &__icon::after{
+
+
+        //_______-------------
+
+    
+        top: 0;
+        transform: rotate(-135deg);
+        //margin-top: -.9rem;
+    }
+
+/*
+    &__checkbox:checked ~ &__button:hover &__icon::before{
+        margin-top:.9rem;
+        
+    }
+
+    &__checkbox:checked ~ &__button:hover &__icon::after{
+        margin-top:-.9rem;
+        
+    }
+    */
+
+
+
+
+
+}

@@ -1,0 +1,237 @@
+@import "./../abstract/animation.scss";
+@import "./../abstract/variables.scss";
+
+.biography__container{
+    margin: 0;
+    position: relative;
+    top:-0.28rem;
+    width: 100vw;
+    height: 100vh;
+    //background-color: black;
+    background-image: linear-gradient(235deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 34%, rgba(94,93,93,1) 100%);
+   .dirtyb{
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+   }
+    .biography__background{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0vh;
+        background-image: linear-gradient(315deg ,$azulito_normal, $pinky 50%, transparent 50%);
+        z-index: 4;
+        //background-image: linear-gradient(315deg ,$azulito, $pinky 50%);
+
+       /*.wall__gradient{
+           display: block;
+           width: 20vw;
+           height: inherit;
+
+           background-image: linear-gradient(90deg, $pinky, $azulito);
+           z-index: 20;
+           
+       }*/
+
+       .glitch{
+           
+           width: 100vw;
+           height: 100vh;
+           position: absolute;
+           top: 0;
+           //background-color: orangered;
+           z-index: 10;
+           
+           
+           .biography__img__normal{
+            //background-color: yellowgreen;
+                position:absolute;
+                //top: -5px;
+                height: 100vh;
+                
+                z-index: 10;
+
+                @include respond (phone){
+                    top: 30vh; 
+                    height: 70%;
+                    
+                }
+
+        
+           }
+           .biography__img__blue{
+               //background-color: orangered;
+                position:absolute;
+                //top: -5px;
+                height: 100vh;
+                
+                z-index: 9;
+
+                @include respond (phone){
+                    top: 30vh; 
+                    height: 70%;
+                    
+                }
+                
+
+           }
+           .biography__img__pinky{
+                position:absolute;
+                //top: 0;
+                height: 100vh;
+                
+                z-index: 8;
+
+                @include respond (phone){
+                    top: 30vh; 
+                    height: 70%;
+                    
+                }
+
+           }
+
+
+        //____________glitch animation_________
+
+        &:hover{
+            
+                
+   
+            .biography__img__blue{
+                animation: glitch .3s cubic-bezier(.25, .46, .45, .94) both infinite
+
+            }
+            .biography__img__pinky{
+                
+                animation: glitch .3s cubic-bezier(.25, .46, .45, .94) reverse both infinite
+
+            }
+            
+
+        }
+         
+
+         
+    }
+           
+
+           
+       
+
+
+      //----------------biography text--------------------- 
+
+      .biography__title{
+        position: absolute;
+        //background-image: "../../img/biography_title.PNG";
+        font-family: "oswald", sans-serif;
+                        //color: white;
+                        //text-shadow: 2px 3px 8px black;
+                        //padding: 2rem;
+        font-size: 8rem;
+        margin:0;
+        box-sizing: border-box;
+        left: 12%;
+
+
+        background-image: linear-gradient(45deg, $pinky_normal 20% , $azulito_normal 100%);//#810505,#eb1668
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @include respond (phone){
+            font-size: 5rem;
+        }
+                
+    }
+   
+    .biography__text__background{
+        
+        //background-color: orangered;
+        position: absolute;
+       // box-sizing: border-box;
+
+
+       // background-image: linear-gradient(315deg,$azulito 50%, $pinky 50%);
+        width:60vw;
+       
+        left:22rem;//10rem
+        top:13rem;
+        //right: 0%;
+        @include respond(phone){
+            left: 29%;
+            top:16%;
+           
+            
+        }
+        
+
+       
+      
+      .biography__text__container{
+
+
+                .biography__text{
+                    
+                    text-align: justify;
+                    
+
+                
+
+                    .biography__paragraph{
+                        font-family: "oswald", sans-serif;
+                        //color: white;
+                        //text-shadow: 2px 3px 8px black;
+                        //padding: 2rem;
+                        font-size: 1.3rem;
+                        
+                        
+
+                        background-image: linear-gradient(45deg, $pinky_normal 20% , $azulito_normal 100%);//#810505,#eb1668
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                       
+                        
+            
+            
+            
+                    }
+            
+                
+                }
+
+
+
+            
+
+       }
+    
+    }
+
+    }
+    
+    .biography__rectangular__container{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        top: -.6vh;
+
+        .rectangular__purple{
+            width: inherit;
+            height: inherit;
+        
+        }
+
+    }
+
+   
+}
+.three-container{
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+   
+    
+}
+
+
+
+
