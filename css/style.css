@@ -24,7 +24,7 @@ body {
   box-sizing: border-box; }
   body ::selection {
     background-color: rgba(216, 47, 86, 0.5);
-    color: #396a7c; }
+    color: #ffa052; }
   body .div {
     height: 100%;
     width: 100%; }
@@ -64,7 +64,7 @@ body {
         position: absolute;
         top: 0px;
         object-fit: cover;
-        background-image: linear-gradient(45deg, rgba(216, 47, 86, 0.5), rgba(57, 106, 124, 0.5) 50%, transparent 50%);
+        background-image: linear-gradient(45deg, rgba(216, 47, 86, 0.5), rgba(255, 160, 71, 0.5) 50%, transparent 50%);
         z-index: 2; }
     body .background .scene__container {
       position: absolute;
@@ -80,10 +80,17 @@ body {
       position: absolute;
       height: 60vh;
       width: 60vw; }
+      body .background .logo__container .bnaLogoIcon {
+        width: 30vw;
+        position: absolute;
+        top: 7vw;
+        left: 60vh;
+        z-index: 100; }
       body .background .logo__container .logo {
         width: inherit;
         position: absolute;
-        top: 42vh;
+        left: 37vh;
+        top: 50vh;
         z-index: 4; }
         @media only screen and (max-width: 75em) {
           body .background .logo__container .logo {
@@ -141,7 +148,7 @@ body {
     height: 100vh;
     position: absolute;
     top: 0vh;
-    background-image: linear-gradient(315deg, #396a7c, rgba(216, 47, 86, 0.5) 50%, transparent 50%);
+    background-image: linear-gradient(315deg, #ffa052, rgba(216, 47, 86, 0.5) 50%, transparent 50%);
     z-index: 4;
     /*.wall__gradient{
            display: block;
@@ -158,28 +165,11 @@ body {
       position: absolute;
       top: 0;
       z-index: 10; }
-      .biography__container .biography__background .glitch .biography__img__normal {
-        position: absolute;
-        height: 100vh;
-        z-index: 10; }
+      .biography__container .biography__background .glitch .bnaLogoIcon {
+        width: 10vw;
+        height: 10vh; }
         @media only screen and (max-width: 37.5em) {
-          .biography__container .biography__background .glitch .biography__img__normal {
-            top: 30vh;
-            height: 70%; } }
-      .biography__container .biography__background .glitch .biography__img__blue {
-        position: absolute;
-        height: 100vh;
-        z-index: 9; }
-        @media only screen and (max-width: 37.5em) {
-          .biography__container .biography__background .glitch .biography__img__blue {
-            top: 30vh;
-            height: 70%; } }
-      .biography__container .biography__background .glitch .biography__img__pinky {
-        position: absolute;
-        height: 100vh;
-        z-index: 8; }
-        @media only screen and (max-width: 37.5em) {
-          .biography__container .biography__background .glitch .biography__img__pinky {
+          .biography__container .biography__background .glitch .bnaLogoIcon {
             top: 30vh;
             height: 70%; } }
       .biography__container .biography__background .glitch:hover .biography__img__blue {
@@ -193,7 +183,7 @@ body {
       margin: 0;
       box-sizing: border-box;
       left: 12%;
-      background-image: linear-gradient(45deg, #d82f56 20%, #396a7c 100%);
+      background-image: linear-gradient(45deg, #d82f56 20%, #ffa052 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
       @media only screen and (max-width: 37.5em) {
@@ -213,7 +203,7 @@ body {
         .biography__container .biography__background .biography__text__background .biography__text__container .biography__text .biography__paragraph {
           font-family: "oswald", sans-serif;
           font-size: 1.3rem;
-          background-image: linear-gradient(45deg, #d82f56 20%, #396a7c 100%);
+          background-image: linear-gradient(45deg, #d82f56 20%, #ffa052 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
   .biography__container .biography__rectangular__container {
@@ -247,7 +237,7 @@ body {
     z-index: 1;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(45deg, #396a7c, rgba(216, 47, 86, 0.5) 50%, transparent 50%); }
+    background-image: linear-gradient(45deg, #ffa052, rgba(216, 47, 86, 0.5) 50%, transparent 50%); }
     .downloads__container .downloads__cover .download__tite {
       position: relative;
       margin: 0;
@@ -257,7 +247,7 @@ body {
       height: 30rem;
       font-family: "oswald", sans-serif;
       font-size: 9rem;
-      background-image: linear-gradient(45deg, #d82f56 20%, #396a7c 100%);
+      background-image: linear-gradient(45deg, #d82f56 20%, #ffa052 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .downloads__container .downloads__cover .backgound__scenario {
@@ -272,7 +262,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(135deg, #396a7c, rgba(216, 47, 86, 0.5) 50%, transparent 50%); }
+    background-image: linear-gradient(135deg, #ffa052, rgba(216, 47, 86, 0.5) 50%, transparent 50%); }
     .downloads__container .downloads__cover2 .cdjs {
       position: relative;
       top: 10rem;
@@ -287,7 +277,7 @@ body {
       height: 30rem;
       font-family: "oswald", sans-serif;
       font-size: 9rem;
-      background-image: linear-gradient(45deg, #d82f56 20%, #396a7c 100%);
+      background-image: linear-gradient(45deg, #d82f56 20%, #ffa052 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 
@@ -308,7 +298,7 @@ body {
   .contact__container .contact__background .contact__background__cover {
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(315deg, rgba(216, 47, 86, 0.5), #396a7c 50%, transparent 50%, transparent 100%); }
+    background-image: linear-gradient(315deg, rgba(216, 47, 86, 0.5), #ffa052 50%, transparent 50%, transparent 100%); }
     .contact__container .contact__background .contact__background__cover .contact__content__container .contact__title {
       position: relative;
       margin: 0;
@@ -317,9 +307,12 @@ body {
       height: 30rem;
       font-family: "oswald", sans-serif;
       font-size: 9rem;
-      background-image: linear-gradient(45deg, #d82f56 20%, #396a7c 100%);
+      background-image: linear-gradient(45deg, #d82f56 20%, #ffa052 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+
+.scene {
+  height: 100vh; }
 
 .navigation {
   /*
@@ -349,7 +342,7 @@ body {
   .navigation__background {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(225deg, rgba(216, 47, 86, 0.5), rgba(57, 106, 124, 0.5) 50%, transparent 50%);
+    background-image: linear-gradient(225deg, rgba(216, 47, 86, 0.5), rgba(255, 160, 71, 0.5) 50%, transparent 50%);
     position: fixed;
     z-index: 10;
     transform: translateX(100%);
@@ -381,7 +374,7 @@ body {
     color: white;
     text-decoration: none;
     font-family: "oswald", sans-serif;
-    background-image: linear-gradient(225deg, rgba(216, 47, 86, 0.5), rgba(57, 106, 124, 0.5) 50%, transparent 50%);
+    background-image: linear-gradient(225deg, rgba(216, 47, 86, 0.5), rgba(255, 160, 71, 0.5) 50%, transparent 50%);
     background-size: 400%;
     transition: all .8s;
     text-shadow: 2px 2px 8px black; }
@@ -444,7 +437,7 @@ body {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 17px 36px 18px;
-  background-image: linear-gradient(270deg, #396a7c, #d82f56); }
+  background-image: linear-gradient(270deg, #ffa052, #d82f56); }
 
 .button, .button:before {
   border-radius: 25px;
@@ -498,7 +491,7 @@ body {
     z-index: 11;
     width: 20rem;
     height: 25rem;
-    background-image: linear-gradient(45deg, #d82f56 30%, #396a7c 100%);
+    background-image: linear-gradient(45deg, #d82f56 30%, #ffa052 100%);
     border-radius: 2%;
     box-shadow: 2px 3px 8px black;
     transition: all .8s; }
@@ -515,7 +508,7 @@ body {
         top: -3rem;
         left: 1.5rem;
         border-style: solid;
-        border-image: linear-gradient(#d82f56, #396a7c) 10;
+        border-image: linear-gradient(#d82f56, #ffa052) 10;
         border-radius: 2%;
         z-index: 10; }
     .cards__container .card1 .info__container {
@@ -538,7 +531,7 @@ body {
     z-index: 11;
     width: 20rem;
     height: 25rem;
-    background-image: linear-gradient(45deg, #d82f56 30%, #396a7c 100%);
+    background-image: linear-gradient(45deg, #d82f56 30%, #ffa052 100%);
     border-radius: 2%;
     box-shadow: 2px 3px 8px black;
     transition: all .8s; }
@@ -555,7 +548,7 @@ body {
         top: -3rem;
         left: 1.5rem;
         border-style: solid;
-        border-image: linear-gradient(#d82f56, #396a7c) 10;
+        border-image: linear-gradient(#d82f56, #ffa052) 10;
         border-radius: 2%;
         z-index: 10; }
     .cards__container .card2 .info__container2 {
@@ -578,7 +571,7 @@ body {
     z-index: 11;
     width: 20rem;
     height: 25rem;
-    background-image: linear-gradient(45deg, #d82f56 30%, #396a7c 100%);
+    background-image: linear-gradient(45deg, #d82f56 30%, #ffa052 100%);
     border-radius: 2%;
     box-shadow: 2px 3px 8px black;
     transition: all .8s; }
@@ -595,7 +588,7 @@ body {
         top: -3rem;
         left: 1.5rem;
         border-style: solid;
-        border-image: linear-gradient(#d82f56, #396a7c) 10;
+        border-image: linear-gradient(#d82f56, #ffa052) 10;
         border-radius: 2%;
         z-index: 10; }
     .cards__container .card3 .info__container3 {
@@ -616,7 +609,7 @@ body {
   top: 0;
   position: fixed;
   display: none;
-  background-image: linear-gradient(45deg, rgba(57, 106, 124, 0.5), rgba(216, 47, 86, 0.5));
+  background-image: linear-gradient(45deg, rgba(255, 160, 71, 0.5), rgba(216, 47, 86, 0.5));
   z-index: 999; }
   .screen_popup .closePopup {
     /*position: relative;
@@ -635,14 +628,14 @@ body {
       border: none;
       text-decoration: none;
       font-size: 7rem;
-      color: #396a7c;
+      color: #ffa052;
       display: inline-block;
       border: none; }
       .screen_popup .closePopup .closePopup__button .equis {
         position: relative;
         left: 83vw; }
       .screen_popup .closePopup .closePopup__button:link, .screen_popup .closePopup .closePopup__button:visited {
-        color: #396a7c;
+        color: #ffa052;
         font-size: 7rem;
         border: none; }
       .screen_popup .closePopup .closePopup__button:hover {
@@ -670,7 +663,7 @@ body {
       left: 1vw;
       font-family: "oswald", sans-serif;
       font-size: 4.5rem;
-      background-image: linear-gradient(45deg, #d82f56 20%, #396a7c 100%);
+      background-image: linear-gradient(45deg, #d82f56 20%, #ffa052 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
 

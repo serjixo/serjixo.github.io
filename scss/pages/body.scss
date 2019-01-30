@@ -106,12 +106,18 @@ body {
       height: 60vh;
       width: 60vw;
 
+      .bnaLogoIcon{
+        width: 30vw;
+        position: absolute;
+        top: 7vw;
+        left: 60vh;
+        z-index: 100;
+    }
    .logo{
-     //background-color: yellowgreen;
       width: inherit;
-      //height: inherit;  with small screen gets to compressed MUST check
       position: absolute;
-      top:42vh;
+      left: 37vh;
+      top:50vh;
       z-index: 4;
 
       @include respond(tablet-land){
