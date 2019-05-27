@@ -89,7 +89,7 @@ body {
       body .background .logo__container .logo {
         width: inherit;
         position: absolute;
-        left: 37vh;
+        left: 3vh;
         top: 50vh;
         z-index: 4; }
         @media only screen and (max-width: 75em) {
@@ -162,8 +162,8 @@ body {
     .biography__container .biography__background .glitch {
       width: 30vw;
       height: 30vh;
-      position: absolute;
-      top: 0;
+      position: relative;
+      left: -23vw;
       z-index: 10; }
       .biography__container .biography__background .glitch .biography__img__normal {
         position: absolute;
@@ -221,14 +221,19 @@ body {
         .biography__container .biography__background .biography__text__background {
           left: 29%;
           top: 16%; } }
-      .biography__container .biography__background .biography__text__background .biography__text__container .biography__text {
-        text-align: justify; }
-        .biography__container .biography__background .biography__text__background .biography__text__container .biography__text .biography__paragraph {
-          font-family: "oswald", sans-serif;
-          font-size: 1.3rem;
-          background-image: linear-gradient(45deg, #d82f56 20%, #ffa052 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; }
+      .biography__container .biography__background .biography__text__background .biography__text__container {
+        position: relative;
+        left: 10vw;
+        top: 3vh;
+        width: 45vw; }
+        .biography__container .biography__background .biography__text__background .biography__text__container .biography__text {
+          text-align: justify; }
+          .biography__container .biography__background .biography__text__background .biography__text__container .biography__text .biography__paragraph {
+            font-family: "oswald", sans-serif;
+            font-size: 1.3rem;
+            background-image: linear-gradient(45deg, #d82f56 20%, #ffa052 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; }
   .biography__container .biography__rectangular__container {
     width: 100vw;
     height: 100vh;

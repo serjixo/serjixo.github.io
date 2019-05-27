@@ -46,57 +46,53 @@
     .glitch {
       width: 30vw;
       height: 30vh;
-      position: absolute;
-      top: 0;
+      position: relative;
+      left: -23vw;
       //background-color: orangered;
       z-index: 10;
 
-      .biography__img__normal{
+      .biography__img__normal {
         //background-color: yellowgreen;
-            position:absolute;
-            //top: -5px;
-            height: 40vh;
-            z-index: 10;
-            left:35vw;
-            top:35vh;
-            @include respond (phone){
-                top: 30vh; 
-                height: 70%;
-                
-            }
-       }
-
-       .biography__img__blue{
-           //background-color: orangered;
-            position:absolute;
-            //top: -5px;
-            height: 40vh;
-            left:35vw;
-            top:35vh;
-            z-index: 9;
-
-            @include respond (phone){
-                top: 40vh; 
-                height: 70%;
-                
-            }
-       }
-
-       .biography__img__pinky{
-            position:absolute;
-            //top: 0;
-            height: 40vh;
-            z-index: 8;
-            left:35vw;
-            top:35vh;
-
-            @include respond (phone){
-                top: 30vh; 
-                height: 70%;
-                
-            }
-
+        position: absolute;
+        //top: -5px;
+        height: 40vh;
+        z-index: 10;
+        left: 35vw;
+        top: 35vh;
+        @include respond(phone) {
+          top: 30vh;
+          height: 70%;
         }
+      }
+
+      .biography__img__blue {
+        //background-color: orangered;
+        position: absolute;
+        //top: -5px;
+        height: 40vh;
+        left: 35vw;
+        top: 35vh;
+        z-index: 9;
+
+        @include respond(phone) {
+          top: 40vh;
+          height: 70%;
+        }
+      }
+
+      .biography__img__pinky {
+        position: absolute;
+        //top: 0;
+        height: 40vh;
+        z-index: 8;
+        left: 35vw;
+        top: 35vh;
+
+        @include respond(phone) {
+          top: 30vh;
+          height: 70%;
+        }
+      }
       //____________glitch animation_________
 
       &:hover {
@@ -154,6 +150,10 @@
       }
 
       .biography__text__container {
+        position: relative;
+        left: 10vw;
+        top: 3vh;
+        width: 45vw;
         .biography__text {
           text-align: justify;
 
