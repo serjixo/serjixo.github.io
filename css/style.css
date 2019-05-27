@@ -81,15 +81,15 @@ body {
       height: 60vh;
       width: 60vw; }
       body .background .logo__container .bnaLogoIcon {
-        width: 30vw;
+        width: 28vw;
         position: absolute;
-        top: 7vw;
-        left: 60vh;
+        top: 2vw;
+        left:5vh;
         z-index: 100; }
       body .background .logo__container .logo {
         width: inherit;
         position: absolute;
-        left: 37vh;
+        left: 5vh;
         top: 50vh;
         z-index: 4; }
         @media only screen and (max-width: 75em) {
@@ -111,6 +111,19 @@ body {
     body .background element.style {
       width: 100vw;
       height: 100vh; }
+    body .background .bnaText {
+      width: 45vw;
+      position: absolute;
+      top: 18vw;
+      left: 0vh;
+      z-index: 100;
+      font-family: "oswald", sans-serif;
+      color: white;
+      text-shadow: 2px 3px 8px black;
+      padding: 2rem;
+      font-size: 1.3rem;
+      text-align: justify;
+    }
 
 @keyframes glitch {
   0% {
@@ -167,19 +180,19 @@ body {
       z-index: 10; }
       .biography__container .biography__background .glitch .biography__img__normal {
         position: absolute;
-        height: 40vh;
+        height: 48vh;
         z-index: 10;
-        left: 35vw;
-        top: 35vh; }
+        left: 2.5vw;
+        top: 5vh; }
         @media only screen and (max-width: 37.5em) {
           .biography__container .biography__background .glitch .biography__img__normal {
             top: 30vh;
             height: 70%; } }
       .biography__container .biography__background .glitch .biography__img__blue {
         position: absolute;
-        height: 40vh;
-        left: 35vw;
-        top: 35vh;
+        height: 48vh;
+        left: 2.5vw;
+        top: 5vh;
         z-index: 9; }
         @media only screen and (max-width: 37.5em) {
           .biography__container .biography__background .glitch .biography__img__blue {
@@ -187,10 +200,10 @@ body {
             height: 70%; } }
       .biography__container .biography__background .glitch .biography__img__pinky {
         position: absolute;
-        height: 40vh;
+        height: 48vh;
         z-index: 8;
-        left: 35vw;
-        top: 35vh; }
+        left: 2.5vw;
+        top: 5vh; }
         @media only screen and (max-width: 37.5em) {
           .biography__container .biography__background .glitch .biography__img__pinky {
             top: 30vh;
@@ -214,9 +227,9 @@ body {
           font-size: 5rem; } }
     .biography__container .biography__background .biography__text__background {
       position: absolute;
-      width: 60vw;
-      left: 22rem;
-      top: 13rem; }
+      width: 70vw;
+      left: 20rem;
+      top: 5rem; }
       @media only screen and (max-width: 37.5em) {
         .biography__container .biography__background .biography__text__background {
           left: 29%;
@@ -237,6 +250,29 @@ body {
     .biography__container .biography__rectangular__container .rectangular__purple {
       width: inherit;
       height: inherit; }
+  body .biography__text__background .bnaText-sm, .bnaText-md, .bnaText-lg {
+    position: absolute;
+    right: 0vh;
+    z-index: 100;
+    font-family: "oswald", sans-serif;
+    color: white;
+    text-shadow: 2px 3px 8px black;
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+  body .biography__text__background .bnaText-sm {
+    width: 30vw;
+    top: 1vw;
+  }
+  body .biography__text__background .bnaText-md {
+    width: 40vw;
+    top: 14vw;
+  }
+  body .biography__text__background .bnaText-lg {
+    width: 50vw;
+    top: 23vw;
+  }
 
 .three-container {
   background-color: transparent;
@@ -384,8 +420,8 @@ body {
     transition: opacity 1; }
   .navigation__list {
     position: absolute;
-    top: 30%;
-    left: 70%;
+    top: 40vh;
+    left: 75vw;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
