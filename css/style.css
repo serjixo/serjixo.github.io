@@ -81,15 +81,15 @@ body {
       height: 60vh;
       width: 60vw; }
       body .background .logo__container .bnaLogoIcon {
-        width: 28vw;
+        width: 30vw;
         position: absolute;
-        top: 2vw;
-        left:5vh;
+        top: 7vw;
+        left: 60vh;
         z-index: 100; }
       body .background .logo__container .logo {
         width: inherit;
         position: absolute;
-        left: 5vh;
+        left: 3vh;
         top: 50vh;
         z-index: 4; }
         @media only screen and (max-width: 75em) {
@@ -111,19 +111,6 @@ body {
     body .background element.style {
       width: 100vw;
       height: 100vh; }
-    body .background .bnaText {
-      width: 45vw;
-      position: absolute;
-      top: 18vw;
-      left: 0vh;
-      z-index: 100;
-      font-family: "oswald", sans-serif;
-      color: white;
-      text-shadow: 2px 3px 8px black;
-      padding: 2rem;
-      font-size: 1.3rem;
-      text-align: justify;
-    }
 
 @keyframes glitch {
   0% {
@@ -175,24 +162,24 @@ body {
     .biography__container .biography__background .glitch {
       width: 30vw;
       height: 30vh;
-      position: absolute;
-      top: 0;
+      position: relative;
+      left: -23vw;
       z-index: 10; }
       .biography__container .biography__background .glitch .biography__img__normal {
         position: absolute;
-        height: 48vh;
+        height: 40vh;
         z-index: 10;
-        left: 2.5vw;
-        top: 5vh; }
+        left: 35vw;
+        top: 35vh; }
         @media only screen and (max-width: 37.5em) {
           .biography__container .biography__background .glitch .biography__img__normal {
             top: 30vh;
             height: 70%; } }
       .biography__container .biography__background .glitch .biography__img__blue {
         position: absolute;
-        height: 48vh;
-        left: 2.5vw;
-        top: 5vh;
+        height: 40vh;
+        left: 35vw;
+        top: 35vh;
         z-index: 9; }
         @media only screen and (max-width: 37.5em) {
           .biography__container .biography__background .glitch .biography__img__blue {
@@ -200,10 +187,10 @@ body {
             height: 70%; } }
       .biography__container .biography__background .glitch .biography__img__pinky {
         position: absolute;
-        height: 48vh;
+        height: 40vh;
         z-index: 8;
-        left: 2.5vw;
-        top: 5vh; }
+        left: 35vw;
+        top: 35vh; }
         @media only screen and (max-width: 37.5em) {
           .biography__container .biography__background .glitch .biography__img__pinky {
             top: 30vh;
@@ -227,21 +214,26 @@ body {
           font-size: 5rem; } }
     .biography__container .biography__background .biography__text__background {
       position: absolute;
-      width: 70vw;
-      left: 20rem;
-      top: 5rem; }
+      width: 60vw;
+      left: 22rem;
+      top: 13rem; }
       @media only screen and (max-width: 37.5em) {
         .biography__container .biography__background .biography__text__background {
           left: 29%;
           top: 16%; } }
-      .biography__container .biography__background .biography__text__background .biography__text__container .biography__text {
-        text-align: justify; }
-        .biography__container .biography__background .biography__text__background .biography__text__container .biography__text .biography__paragraph {
-          font-family: "oswald", sans-serif;
-          font-size: 1.3rem;
-          background-image: linear-gradient(45deg, #d82f56 20%, #ffa052 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent; }
+      .biography__container .biography__background .biography__text__background .biography__text__container {
+        position: relative;
+        left: 10vw;
+        top: 3vh;
+        width: 45vw; }
+        .biography__container .biography__background .biography__text__background .biography__text__container .biography__text {
+          text-align: justify; }
+          .biography__container .biography__background .biography__text__background .biography__text__container .biography__text .biography__paragraph {
+            font-family: "oswald", sans-serif;
+            font-size: 1.3rem;
+            background-image: linear-gradient(45deg, #d82f56 20%, #ffa052 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; }
   .biography__container .biography__rectangular__container {
     width: 100vw;
     height: 100vh;
@@ -250,29 +242,6 @@ body {
     .biography__container .biography__rectangular__container .rectangular__purple {
       width: inherit;
       height: inherit; }
-  body .biography__text__background .bnaText-sm, .bnaText-md, .bnaText-lg {
-    position: absolute;
-    right: 0vh;
-    z-index: 100;
-    font-family: "oswald", sans-serif;
-    color: white;
-    text-shadow: 2px 3px 8px black;
-    padding: 2rem;
-    font-size: 1.3rem;
-    text-align: justify;
-  }
-  body .biography__text__background .bnaText-sm {
-    width: 30vw;
-    top: 1vw;
-  }
-  body .biography__text__background .bnaText-md {
-    width: 40vw;
-    top: 14vw;
-  }
-  body .biography__text__background .bnaText-lg {
-    width: 50vw;
-    top: 23vw;
-  }
 
 .three-container {
   background-color: transparent;
@@ -420,8 +389,8 @@ body {
     transition: opacity 1; }
   .navigation__list {
     position: absolute;
-    top: 40vh;
-    left: 75vw;
+    top: 30%;
+    left: 70%;
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
